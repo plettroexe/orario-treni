@@ -5,35 +5,48 @@
         "partenza": "Roma",
         "arrivo": "Milano",
         "durata": "3h 30min",
-        "compagnia": "Trenitalia"
+        "compagnia": "Trenitalia",
+        "orari_partenza": ["08:00", "10:30", "14:15", "17:45", "21:00"]
       },
       {
         "id": "2",
         "partenza": "Firenze",
         "arrivo": "Venezia",
         "durata": "3h 30min",
-        "compagnia": "Italo"
+        "compagnia": "Italo",
+        "orari_partenza": ["09:15", "11:45", "15:30", "18:00", "22:30"]
       },
       {
         "id": "3",
         "partenza": "Napoli",
         "arrivo": "Bologna",
         "durata": "3h 15min",
-        "compagnia": "Trenitalia"
+        "compagnia": "Trenitalia",
+        "orari_partenza": ["07:30", "12:00", "16:45", "19:30", "23:15"]
       },
       {
         "id": "4",
         "partenza": "Genova",
         "arrivo": "Torino",
         "durata": "3h 35min",
-        "compagnia": "Italo"
+        "compagnia": "Italo",
+        "orari_partenza": ["10:45", "13:15", "17:00", "20:30", "01:00"]
       },
       {
         "id": "5",
         "partenza": "Palermo",
         "arrivo": "Catania",
         "durata": "3h 30min",
-        "compagnia": "Trenitalia"
+        "compagnia": "Trenitalia",
+        "orari_partenza": ["12:00", "14:30", "18:15", "21:45", "02:00"]
+      },
+      {
+        "id": "6",
+        "partenza": "Bari",
+        "arrivo": "Lecce",
+        "durata": "2h",
+        "compagnia": "Ferrovie del Sud Est",
+        "orari_partenza": ["08:30", "11:00", "15:45", "18:30", "22:15"]
       }
     ]
   }
