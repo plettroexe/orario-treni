@@ -3,34 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Orario Treni</title>
-    
 </head>
 <body>
 
-<div id="login">
-    <h2>Login</h2>
-    <form id="login-form">
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required>
-        <br>
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
-        <br>
-        <button id="access" type="button">Login</button>
-    </form>
+<div class="container mt-5">
+    <div id="login" class="jumbotron">
+        <h2 class="display-4">Login</h2>
+        <form id="login-form">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" class="form-control" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" class="form-control" id="password" name="password" required>
+            </div>
+            <button id="access" class="btn btn-primary" type="button">Login</button>
+        </form>
+    </div>
+
+    <div id="content" class="hidden">
+        <h2 class="display-4">Tratte</h2>
+        <table id="table" class="table">
+        </table>
+        <a href="/ricerca.html" class="btn btn-success">Cerca Tratte</a>
+    </div>
 </div>
 
-<div id="content" class="hidden">
-    <h2>Tratte</h2>
-    <table id="table">
-    </table>
-    <a href="/ricerca.html">
-    <button id="serch" type="button">Cerca Tratte</button>
-</a>
-</div>
-
-</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script src="orariotreni.js"></script>
+</body>
 </html>

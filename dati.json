@@ -6,23 +6,23 @@
         "arrivo": "Milano",
         "durata": "3h 30min",
         "compagnia": "Trenitalia",
-        "orari_partenza": ["08:00", "10:30", "14:15", "17:45", "21:00"]
+        "orari": ["08:00", "10:30", "14:15", "17:45", "21:00"]
       },
       {
         "id": "2",
-        "partenza": "Firenze",
+        "partenza": "Milano",
         "arrivo": "Venezia",
-        "durata": "3h 30min",
+        "durata": "2h",
         "compagnia": "Italo",
-        "orari_partenza": ["09:15", "11:45", "15:30", "18:00", "22:30"]
+        "orari": ["09:15", "11:45", "15:30", "18:00", "22:30"]
       },
       {
         "id": "3",
         "partenza": "Napoli",
-        "arrivo": "Bologna",
-        "durata": "3h 15min",
+        "arrivo": "Genova",
+        "durata": "4h 30min",
         "compagnia": "Trenitalia",
-        "orari_partenza": ["07:30", "12:00", "16:45", "19:30", "23:15"]
+        "orari": ["07:30", "12:00", "16:45", "19:30", "23:15"]
       },
       {
         "id": "4",
@@ -30,7 +30,7 @@
         "arrivo": "Torino",
         "durata": "3h 35min",
         "compagnia": "Italo",
-        "orari_partenza": ["10:45", "13:15", "17:00", "20:30", "01:00"]
+        "orari": ["10:45", "13:15", "17:00", "20:30", "01:00"]
       },
       {
         "id": "5",
@@ -38,15 +38,15 @@
         "arrivo": "Catania",
         "durata": "3h 30min",
         "compagnia": "Trenitalia",
-        "orari_partenza": ["12:00", "14:30", "18:15", "21:45", "02:00"]
+        "orari": ["12:00", "14:30", "18:15", "21:45", "02:00"]
       },
       {
         "id": "6",
-        "partenza": "Bari",
-        "arrivo": "Lecce",
-        "durata": "2h",
+        "partenza": "Firenze",
+        "arrivo": "Bari",
+        "durata": "5h",
         "compagnia": "Ferrovie del Sud",
-        "orari_partenza": ["08:30", "11:00", "15:45", "18:30", "22:15"]
+        "orari": ["08:30", "11:00", "15:45", "18:30", "22:15"]
       }
     ]
   }

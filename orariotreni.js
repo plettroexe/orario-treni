@@ -95,7 +95,7 @@ load(specificKey)
   const render = (data) => {
       let html = tableHeader;
       for (let i = 0; i < data.length; i++) {
-        let orariPartenza = data[i].orari_partenza.join(', '); // Unisci gli orari con una virgola
+        let orariPartenza = data[i].orari.join(', '); // Unisci gli orari con una virgola
         let rowHtml = template.replace("%ID", data[i].id);
         rowHtml = rowHtml.replace("%PARTENZA", data[i].partenza);
         rowHtml = rowHtml.replace("%ARRIVO", data[i].arrivo);

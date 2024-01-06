@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Ricerca Tratte</title>
+</head>
+<body>
+
+<div class="container mt-5">
+    <div id="search-form" class="jumbotron">
+        <h2 class="display-4">Ricerca Tratte</h2>
+        <form id="train-search-form">
+            <div class="form-group">
+                <label for="departure">Stazione di Partenza:</label>
+                <input type="text" class="form-control" id="departure" name="departure">
+            </div>
+
+            <div class="form-group">
+                <label for="arrival">Stazione di Arrivo:</label>
+                <input type="text" class="form-control" id="arrival" name="arrival">
+            </div>
+
+            <div class="form-group">
+                <label for="time">Orario:</label>
+                <input type="time" class="form-control" id="time" name="time">
+            </div>
+
+            <button id="search" class="btn btn-primary" type="button">Cerca Tratte</button>
+        </form>
+
+        <div class="mt-4">
+            <h3 class="mb-3">Risultati della Ricerca</h3>
+            <div class="card">
+                <div id="results" class="card-body">
+                
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="ricercatreni.js"></script>
+</body>
+</html>
+
