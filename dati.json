@@ -45,7 +45,7 @@
         "partenza": "Bari",
         "arrivo": "Lecce",
         "durata": "2h",
-        "compagnia": "Ferrovie del Sud Est",
+        "compagnia": "Ferrovie del Sud",
         "orari_partenza": ["08:30", "11:00", "15:45", "18:30", "22:15"]
       }
     ]
