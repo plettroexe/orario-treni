@@ -1,3 +1,5 @@
+const table = document.getElementById("table");
+
 access.onclick = () => {
     const url = 'https://ws.progettimolinari.it/credential/login';
     const token = '56ba61b3-a7cf-4a2d-be49-911579750e38';
@@ -35,24 +37,6 @@ access.onclick = () => {
   
   };
 
-  const tableHeader = `<tr>
-  <th>ID</th> 
-  <th>PARTENZA</th> 
-  <th>ARRIVO</th>
-  <th>DURATA</th> 
-  <th>COMPAGNIA</th> 
-  </tr> 
-`;
-
-const template = ` <tr>
-  <td>%ID</td> 
-  <td>%PARTENZA</td> 
-  <td>%ARRIVO</td> 
-  <td>%DURATA</td> 
-  <td>%COMPAGNIA</td> 
-  </tr>
-`;
-
 const token = '56ba61b3-a7cf-4a2d-be49-911579750e38';
 const urlLoad = "https://ws.progettimolinari.it/cache/get";
 
@@ -74,20 +58,48 @@ const load = (key) => {
             }
             return response.json();
         })
-        .then(data => resolve(data))
+        .then(data => resolve(data.result))
         .catch(error => reject(error));
     });
 };
 
-// Esempio di utilizzo di load con una chiave specifica
-const specificKey = 'tratte'; // Sostituisci con la chiave desiderata
+const specificKey = 'tratte';
+
 load(specificKey)
     .then(data => {
-        // I dati JSON sono disponibili qui
-        console.log("Dati recuperati con successo:", data);
-
-        // Ora puoi elaborare i dati come desideri, ad esempio, inserendoli dinamicamente nella pagina HTML
+        console.log("Dati recuperati con successo:", JSON.parse(data).tratte);
+        render(JSON.parse(data).tratte);
     })
     .catch(error => {
         console.error("Si è verificato un errore durante il recupero dei dati:", error);
     });
+
+const tableHeader = `<tr>
+  <th>ID</th>
+  <th>PARTENZA</th>
+  <th>ARRIVO</th>
+  <th>DURATA</th>
+  <th>COMPAGNIA</th>
+</tr>`;
+
+const template = `<tr>
+  <td>%ID</td>
+  <td>%PARTENZA</td>
+  <td>%ARRIVO</td>
+  <td>%DURATA</td>
+  <td>%COMPAGNIA</td>
+</tr>`;
+
+const render = (data) => {
+    let html = tableHeader;
+    for (let i = 0; i < data.length; i++) {
+      let rowHtml = template.replace("%ID", data[i].id);
+      rowHtml = rowHtml.replace("%PARTENZA", data[i].partenza);
+      rowHtml = rowHtml.replace("%ARRIVO", data[i].arrivo);
+      rowHtml = rowHtml.replace("%DURATA", data[i].durata);
+      rowHtml = rowHtml.replace("%COMPAGNIA", data[i].compagnia);
+      html += rowHtml;
+    }
+    table.innerHTML = html;
+  };
+  
