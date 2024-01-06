@@ -1,0 +1,40 @@
+{
+    "tratte": [
+      {
+        "id": "1",
+        "citta_partenza": "Roma",
+        "citta_arrivo": "Milano",
+        "durata": "3h 30min",
+        "compagnia_ferroviaria": "Trenitalia"
+      },
+      {
+        "id": "2",
+        "citta_partenza": "Firenze",
+        "citta_arrivo": "Venezia",
+        "durata": "3h 30min",
+        "compagnia_ferroviaria": "Italo"
+      },
+      {
+        "id": "3",
+        "citta_partenza": "Napoli",
+        "citta_arrivo": "Bologna",
+        "durata": "3h 15min",
+        "compagnia_ferroviaria": "Trenitalia"
+      },
+      {
+        "id": "4",
+        "citta_partenza": "Genova",
+        "citta_arrivo": "Torino",
+        "durata": "3h 35min",
+        "compagnia_ferroviaria": "Italo"
+      },
+      {
+        "id": "5",
+        "citta_partenza": "Palermo",
+        "citta_arrivo": "Catania",
+        "durata": "3h 30min",
+        "compagnia_ferroviaria": "Trenitalia"
+      }
+    ]
+  }
+  
