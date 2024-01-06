@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Pagina Protetta</title>
+    <title>Orario Treni</title>
     
 </head>
 <body>
 
-<div id="login-container">
+<div id="login">
     <h2>Login</h2>
     <form id="login-form">
         <label for="username">Username:</label>
@@ -18,11 +18,11 @@
         <label for="password">Password:</label>
         <input type="password" id="password" name="password" required>
         <br>
-        <button type="button" onclick="authenticate()">Login</button>
+        <button id="access" type="button">Login</button>
     </form>
 </div>
 
-<div id="content-container" class="hidden">
+<div id="content" class="hidden">
     <h2>Pagina Protetta</h2>
     <p>Contenuto della pagina protetta visibile solo dopo il login.</p>
 </div>
